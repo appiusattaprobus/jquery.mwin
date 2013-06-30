@@ -1,0 +1,32 @@
+/*
+ * CSS FILE FOR:
+ * jQuery Modal Window Plugin 1.0
+ * Nikita Ivanov <dr.ivanov@nxt.ru>
+ * Copyright 2013
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* STYLE MWIN */
+
+#mwin_fadebody {
+	background: #444;
+	position: absolute;
+	left:0; top:0;
+	width: 100%; 
+	opacity: 0.8;
+	z-index: 9999;
+}
+#mwin_loader {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index:99999;
+}
+#mwin_close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index:99999;
+	cursor: pointer;
+}

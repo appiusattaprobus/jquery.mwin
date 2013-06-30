@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<!-- BEGIN head -->
+<head>
+	
+	<!-- Meta Tags -->
+	<meta http-equiv="" content="" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mwin.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".window").mwin({
+				open_button		: 'a.win',
+				close_button	: 'a.close'
+			});
+		});
+	</script>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/mwin_style.css" />
+	
+<!-- END head -->
+</head>
+
+<!-- BEGIN body -->
+<body>
+
+	<a href="#" class='win'>WIN</a>
+	
+	<div class="window">
+		<p>Long Long Text...</p>
+		<p>Long Long Text...</p>
+		<p>Long Long Text...</p>
+		<a class="close" href="#">close</a>
+	</div>
+	
+<!-- END body -->
+</body>
+</html>
