@@ -10,9 +10,9 @@
   $.fn.mwin = function( options ){
 	
 	var sets = $.extend( {
-		open_button		: false,
-		close_button		: false,
-		time					: 100
+		open_button	: false,
+		close_button	: false,
+		time		: 100
 	}, options);
   
 	var $this = $(this);
@@ -21,10 +21,10 @@
 	
 		$( "<div id='mwin_fadebody'></div>" ).appendTo( 'body' );
 		
-		var hdoc			= $(document).height();
-		var hbody			= $( 'body' ).height();
-		var hwin			= $(window).height();
-		var wwin			= $(window).width();
+		var hdoc	= $(document).height();
+		var hbody	= $( 'body' ).height();
+		var hwin	= $(window).height();
+		var wwin	= $(window).width();
 		var $fadebody	= $( "#mwin_fadebody" );
 
 		if( hbody < hdoc )
