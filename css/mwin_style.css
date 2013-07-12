@@ -10,7 +10,7 @@
 /* STYLE MWIN */
 
 #mwin_fadebody {
-	background: #444;
+	background: #fefefe;
 	position: absolute;
 	left:0; top:0;
 	width: 100%; 
@@ -29,4 +29,26 @@
 	top: 10px;
 	z-index:99999;
 	cursor: pointer;
+}
+
+/* WINDOW STYLE */
+.window {
+	/* GENERAL STYLE */
+	display: none;
+	position: relative;
+	z-index: 99999;
+	top: 0; left: 0;
+	margin: 0 auto;
+	
+	/* OTHER STYLE */
+	background: #fff;
+	width: 300px;
+	height: 250px;
+	padding: 10px;
+	-webkit-box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0,0,0,0.15);
+	box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0,0,0,0.15);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }

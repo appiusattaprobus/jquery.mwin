@@ -8,35 +8,31 @@
 
 (function($) {
   $.fn.mwin = function( options ){
-
+	
 	var sets = $.extend( {
 		open_button		: false,
-		close_button	: false,
-		time			: 800
+		close_button		: false,
+		time					: 100
 	}, options);
   
 	var $this = $(this);
-	$this.css({
-		'display' : 'none',
-		'position': 'absolute',
-		'z-index' : 99999
-	});
 	
 	$( sets.open_button ).click(function(){
 	
 		$( "<div id='mwin_fadebody'></div>" ).appendTo( 'body' );
 		
-		var hdoc		= $(document).height();
-		var hbody		= $( 'body' ).height();
+		var hdoc			= $(document).height();
+		var hbody			= $( 'body' ).height();
+		var hwin			= $(window).height();
+		var wwin			= $(window).width();
 		var $fadebody	= $( "#mwin_fadebody" );
 
 		if( hbody < hdoc )
 			$fadebody.css( 'height', hdoc );
 		else
 			$fadebody.css( 'height', hbody );
-		
+			
 		$this.fadeIn( sets.time );
-		
 		
 		return false;
 	});
@@ -54,4 +50,5 @@
 	
     return this;
   };
+  
 })(jQuery);
