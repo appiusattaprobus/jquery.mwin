@@ -36,7 +36,9 @@
 			
 		margins();
 		
-		$this.fadeIn( sets.time );
+		$this.fadeIn( sets.time, function(){
+			
+		});
 		
 		return false;
 	});
@@ -50,11 +52,11 @@
 	 * Function create margins from rims of window 
 	 */
 	function margins(){
-		var hwin	= $(window).height();
-		var wwin	= $(window).width();
 		$this.css({
-			'top' : (hwin/2 - $this.height()/2)*100/hwin + '%',
-			'left': (wwin/2 - $this.width()/2)*100/wwin + '%'
+			'top' : 50 + '%',
+			'left': 50 + '%',
+			'margin-top'  : -$this.height() /2.,
+			'margin-left' : -$this.width() /2.,
 		});
 	};
 	
